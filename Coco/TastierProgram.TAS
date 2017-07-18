@@ -1,0 +1,111 @@
+
+
+program Test {
+
+  int i;
+
+  //declaring array
+  array int arrX[10];
+
+  //declaring constant
+  constant int constX<-100;
+
+   void SumUp() {
+
+      int j, sum, q;
+
+      int t1,t2,t3,t4,r,ix,addNum,temp,total,arrResult,constRes;
+      bool e;
+
+
+      void Subtract() {
+         i := i - 1;
+      }
+
+      void Add(int tots;int num;)
+       {
+
+//referencing the parameters passed
+         tots := tots + 1;
+         num := num + 3;
+      }
+
+
+
+//array statements
+       arrX[2] := 1;
+       arrX[2] := arrX[2] + 2;
+       arrResult:= arrX[2];
+
+
+//conditional statement
+      t1 := 3;
+      t2 := 10;
+      t3:= t2>t1?t2+4:t2-2;
+
+
+      r:=0;
+
+
+//for loop implementation
+      for(ix:=0;ix:=ix+1;ix<7;)
+      do
+      {
+      r:=r+1;
+      }
+
+
+
+    addNum:=7;
+    total :=0;
+
+//switch case statement
+    switch(addNum)
+    {
+    case 2 : total := total + 2; break;
+    case 1 : total := total + 1; break;
+    case 7 : total := total + 7; break;
+    default : total := total + 0; break;
+    }
+
+//passing parameters by reference
+      Add(total;addNum;);
+
+      total := total + 2;
+
+
+
+      //checking that switch and passing parameters work.
+      //total starts at 0; after switch total becomes 7;
+      //passing it to Add procedure, which increments total by 1.
+      //coming back add 2 to total making it 10.
+
+      write "total: ";  writeln total;
+
+      //testing to check if array statements work
+      write "result of arrX[2]: ";
+      writeln arrResult;
+
+      //test the conditional statement
+      write "t3: ";
+      writeln t3;
+
+      //check if for loop works
+      write "result of r after for loop: ";
+      writeln r;
+
+
+
+
+   }
+
+   void main() {
+
+         constant int constX <- 100;
+         int x;
+         x := 100 + constX;
+
+         SumUp();
+
+   }
+}
