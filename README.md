@@ -5,7 +5,7 @@ The project implements a basic compiler by applying syntax-directed translation.
 
 
 Implementing functionalities such as:
-Markup: 
+
 1. Scalar and non scalar variables
 2. conditional statements: switch cases and ternary operators
 3. parameter passing 
