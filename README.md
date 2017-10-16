@@ -6,10 +6,16 @@ The project implements a basic compiler by applying syntax-directed translation.
 
 Implementing functionalities such as:
 
-1. Scalar and non scalar variables
-2. conditional statements: switch cases and ternary operators
-3. parameter passing 
+1. scalar and non scalar variables
+2. conditional statements: if statements, switch cases and ternary operators
+3. parameter passing by value
+4. compile-time array bound checking
 
+
+To compile the project on a Unix machine:
+1. run 'brew install make'
+2. run 'make build'
+3. run 'make compile'
 
 
 Here is a detailed report of my implementation:
